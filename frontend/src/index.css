@@ -1,0 +1,46 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue:       #3B5BDB;
+  --blue-dark:  #2F4AC0;
+  --blue-light: #EEF2FF;
+  --violet:     #7048E8;
+  --teal:       #0C8599;
+  --red:        #E03131;
+  --red-light:  #FFF5F5;
+  --green:      #2F9E44;
+  --green-light:#EBFBEE;
+  --gray-50:    #F8F9FA;
+  --gray-100:   #F1F3F5;
+  --gray-200:   #E9ECEF;
+  --gray-300:   #DEE2E6;
+  --gray-400:   #CED4DA;
+  --gray-500:   #ADB5BD;
+  --gray-600:   #868E96;
+  --gray-700:   #495057;
+  --gray-800:   #343A40;
+  --gray-900:   #212529;
+  --white:      #FFFFFF;
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+  --shadow:     0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.12);
+  --radius:     8px;
+  --radius-lg:  12px;
+  --font:       'Inter', system-ui, sans-serif;
+}
+
+html { font-size: 16px; }
+body {
+  font-family: var(--font);
+  background: var(--gray-50);
+  color: var(--gray-900);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a { color: var(--blue); text-decoration: none; }
+button { cursor: pointer; font-family: inherit; }
+img { max-width: 100%; display: block; }
+
+/* Leaflet fix */
+.leaflet-container { z-index: 1; }

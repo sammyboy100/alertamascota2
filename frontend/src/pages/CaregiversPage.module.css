@@ -1,0 +1,70 @@
+.pageHeader { margin-bottom: 1.5rem; }
+.title { font-size: 1.6rem; font-weight: 800; color: var(--gray-900); letter-spacing: -.02em; }
+.sub   { color: var(--gray-600); margin-top: .25rem; }
+
+.tabs { display: flex; gap: .25rem; margin-bottom: 1.75rem; background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: .3rem; width: fit-content; }
+.tab  { background: none; border: none; padding: .45rem 1.1rem; font-size: .88rem; font-weight: 600; color: var(--gray-600); border-radius: 6px; transition: all .15s; }
+.tab:hover   { background: var(--gray-100); }
+.tabActive   { background: var(--blue); color: var(--white) !important; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap: 1.25rem; }
+.card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 1.25rem; box-shadow: var(--shadow-sm); transition: transform .2s; }
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+
+.cardHeader { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: .6rem; }
+.name { font-size: 1.05rem; font-weight: 700; margin-bottom: .3rem; }
+
+.roleBadge { display: inline-block; padding: .15rem .65rem; border-radius: 20px; font-size: .75rem; font-weight: 700; }
+.role_SOLIDARIO    { background: #E3FAFC; color: var(--teal); }
+.role_PROFESIONAL  { background: var(--blue-light); color: var(--blue); }
+.role_ESPECIALIZADO{ background: #F8F0FF; color: var(--violet); }
+
+.rating { display: flex; align-items: center; gap: .3rem; flex-shrink: 0; }
+.stars  { color: #F59E0B; font-size: 1rem; letter-spacing: -.1em; }
+.ratingNum { font-size: .82rem; font-weight: 700; color: var(--gray-700); }
+
+.district { font-size: .82rem; color: var(--gray-500); margin-bottom: .5rem; }
+.bio      { font-size: .87rem; color: var(--gray-700); margin-bottom: .75rem; line-height: 1.5; }
+
+.tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .85rem; }
+.tag  { background: var(--gray-100); color: var(--gray-700); padding: .15rem .55rem; border-radius: 20px; font-size: .78rem; font-weight: 600; }
+
+.toggleRow   { display: flex; align-items: center; justify-content: space-between; padding-top: .75rem; border-top: 1px solid var(--gray-100); }
+.toggleLabel { font-size: .82rem; color: var(--gray-600); }
+.toggle { width: 44px; height: 24px; background: var(--gray-300); border: none; border-radius: 12px; position: relative; transition: background .2s; padding: 0; }
+.toggle.toggleOn { background: var(--blue); }
+.toggleThumb { position: absolute; width: 18px; height: 18px; background: var(--white); border-radius: 50%; top: 3px; left: 3px; transition: transform .2s; box-shadow: var(--shadow-sm); }
+.toggleOn .toggleThumb { transform: translateX(20px); }
+
+.formWrap  { max-width: 680px; }
+.form      { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); }
+.formTitle { font-size: 1.05rem; font-weight: 700; margin-bottom: 1.25rem; }
+.formGrid  { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+.fullWidth { grid-column: 1 / -1; }
+.field     { display: flex; flex-direction: column; gap: .3rem; }
+.label     { font-size: .8rem; font-weight: 700; color: var(--gray-600); text-transform: uppercase; letter-spacing: .04em; }
+.input     { padding: .6rem .85rem; border: 1.5px solid var(--gray-300); border-radius: var(--radius); font-size: .9rem; font-family: inherit; width: 100%; }
+.input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(59,91,219,.12); }
+.textarea  { min-height: 80px; resize: vertical; }
+
+.chips     { display: flex; flex-wrap: wrap; gap: .4rem; }
+.chip      { background: var(--gray-100); border: 1.5px solid var(--gray-200); color: var(--gray-700); border-radius: 20px; padding: .3rem .85rem; font-size: .84rem; font-weight: 600; transition: all .15s; }
+.chip:hover    { border-color: var(--blue); }
+.chipActive    { background: var(--blue-light); border-color: var(--blue); color: var(--blue); }
+
+.infoBox { background: #FFF9DB; border: 1px solid #FFE066; border-radius: var(--radius); padding: .75rem 1rem; font-size: .84rem; color: #7A5800; margin-bottom: 1rem; }
+.btnPrimary { background: var(--blue); color: var(--white); border: none; border-radius: var(--radius); padding: .7rem 1.75rem; font-size: .95rem; font-weight: 700; transition: background .15s; }
+.btnPrimary:hover { background: var(--blue-dark); }
+
+.msg { padding: .75rem 1rem; background: var(--green-light); color: var(--green); border-radius: var(--radius); margin-bottom: 1rem; font-weight: 600; font-size: .9rem; }
+.empty { color: var(--gray-500); padding: 2.5rem; text-align: center; }
+
+.adminWrap  { max-width: 700px; }
+.adminSub   { color: var(--gray-600); font-size: .88rem; margin-bottom: 1.25rem; }
+.adminList  { display: flex; flex-direction: column; gap: .6rem; }
+.adminRow   { display: flex; align-items: center; justify-content: space-between; padding: .85rem 1.1rem; background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); flex-wrap: wrap; gap: .5rem; }
+.adminRow strong { margin-right: .5rem; }
+.verifiedBadge { background: var(--green-light); color: var(--green); padding: .15rem .6rem; border-radius: 20px; font-size: .75rem; font-weight: 700; margin-left: .4rem; }
+.pendingBadge  { background: #FFF9DB; color: #7A5800; padding: .15rem .6rem; border-radius: 20px; font-size: .75rem; font-weight: 700; margin-left: .4rem; }
+.btnVerify { background: var(--blue); color: var(--white); border: none; border-radius: var(--radius); padding: .4rem 1rem; font-size: .84rem; font-weight: 700; }
+.btnVerify:hover { background: var(--blue-dark); }

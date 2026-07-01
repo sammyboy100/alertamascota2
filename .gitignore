@@ -1,0 +1,8 @@
+node_modules/
+target/
+*.class
+*.jar
+.env
+.DS_Store
+*.log
+mongo_data/

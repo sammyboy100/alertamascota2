@@ -1,0 +1,47 @@
+.pageHeader { margin-bottom: 1.5rem; }
+.title { font-size: 1.6rem; font-weight: 800; color: var(--gray-900); letter-spacing: -.02em; }
+.sub   { color: var(--gray-600); margin-top: .25rem; }
+
+.tabs { display: flex; gap: .25rem; margin-bottom: 1.75rem; background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius); padding: .3rem; width: fit-content; }
+.tab  { background: none; border: none; padding: .45rem 1.1rem; font-size: .88rem; font-weight: 600; color: var(--gray-600); border-radius: 6px; transition: all .15s; }
+.tab:hover   { background: var(--gray-100); color: var(--gray-900); }
+.tabActive   { background: var(--blue); color: var(--white) !important; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 1.25rem; }
+.card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 1.25rem; box-shadow: var(--shadow-sm); transition: transform .2s, box-shadow .2s; }
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.cardTop    { display: flex; align-items: center; gap: .5rem; margin-bottom: .6rem; }
+.statusDot  { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.statusLabel{ font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--gray-600); }
+.species    { margin-left: auto; font-size: .78rem; background: var(--blue-light); color: var(--blue); padding: .15rem .55rem; border-radius: 20px; font-weight: 600; }
+.petName    { font-size: 1.1rem; font-weight: 700; margin-bottom: .2rem; }
+.breed      { font-size: .84rem; color: var(--gray-600); margin-bottom: .5rem; }
+.desc       { font-size: .88rem; color: var(--gray-700); margin-bottom: .75rem; }
+.cardMeta   { font-size: .8rem; color: var(--gray-500); margin-bottom: .75rem; }
+.btnResolve { width: 100%; padding: .45rem; background: var(--green-light); color: var(--green); border: 1px solid #B2F2BB; border-radius: var(--radius); font-size: .84rem; font-weight: 600; transition: background .15s; }
+.btnResolve:hover { background: #D3F9D8; }
+
+.formWrap { max-width: 780px; }
+.form { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); }
+.formGrid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem; }
+.fullWidth { grid-column: 1 / -1; }
+.field { display: flex; flex-direction: column; gap: .3rem; }
+.label { font-size: .82rem; font-weight: 700; color: var(--gray-700); text-transform: uppercase; letter-spacing: .04em; }
+.hint  { font-weight: 400; color: var(--gray-500); text-transform: none; letter-spacing: 0; }
+.input { padding: .6rem .85rem; border: 1.5px solid var(--gray-300); border-radius: var(--radius); font-size: .9rem; font-family: inherit; background: var(--white); color: var(--gray-900); transition: border-color .15s, box-shadow .15s; width: 100%; }
+.input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(59,91,219,.12); }
+.textarea { min-height: 85px; resize: vertical; }
+
+.mapSection { margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: .5rem; }
+.mapWrap    { height: 320px; border-radius: var(--radius); overflow: hidden; border: 1.5px solid var(--gray-300); }
+.coordsOk   { font-size: .82rem; color: var(--green); font-family: monospace; background: var(--green-light); padding: .3rem .6rem; border-radius: 6px; width: fit-content; }
+
+.btnPrimary { background: var(--blue); color: var(--white); border: none; border-radius: var(--radius); padding: .7rem 1.75rem; font-size: .95rem; font-weight: 700; transition: background .15s, transform .1s; }
+.btnPrimary:hover  { background: var(--blue-dark); }
+.btnPrimary:active { transform: scale(.98); }
+
+.mapFullWrap { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); }
+
+.msg     { padding: .75rem 1rem; background: var(--blue-light); color: var(--blue); border-radius: var(--radius); margin-bottom: 1rem; font-size: .9rem; font-weight: 600; }
+.loading { color: var(--gray-500); padding: 2rem; text-align: center; }
+.empty   { color: var(--gray-500); padding: 3rem; text-align: center; background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--gray-200); }
